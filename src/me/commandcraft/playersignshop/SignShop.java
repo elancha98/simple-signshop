@@ -18,8 +18,7 @@ public class SignShop implements Listener {
 	Material material;
 	
 	public SignShop(Player player, double price) {
-		ItemStack item = player.getInventory().getItemInMainHand();
-		this(player, item.getType(), item.getAmount(), price);
+		this(player, player.getInventory().getItemInMainHand().getType(), player.getInventory().getItemInMainHand().getAmount(), price);
 	}
 
 	public SignShop(Player player, Material material, int amount, double price) {
