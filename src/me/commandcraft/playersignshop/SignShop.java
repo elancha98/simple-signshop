@@ -12,7 +12,7 @@ import org.bukkit.inventory.ItemStack;
 
 public class SignShop implements Listener {
 	
-	int x, y, z;
+	int x, y, z; //coordinates of the sign
 	double price;
 	int amount;
 	Material material;
@@ -28,6 +28,7 @@ public class SignShop implements Listener {
 			this.price = price;
 			this.amount = amount;
 			
+			//TODO create sign
 			
 		} else {
 			player.sendMessage(ChatColor.RED + "error: you dont have that amount of " + material.name());
@@ -35,13 +36,13 @@ public class SignShop implements Listener {
 	}
 	
 	public static Block getSignBlock(Player player) {
-		
+		//TODO get block the sign must be placed on
 		return null;
 	}
 
 	@EventHandler
 	public void onSignClick(PlayerInteractEvent event) {
-		
+		//TODO handle click and check if clicked block matches coordinates
 	}
 	
 	@EventHandler
