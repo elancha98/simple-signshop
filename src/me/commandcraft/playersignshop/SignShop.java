@@ -19,6 +19,7 @@ public class SignShop implements Listener {
 	
 	public SignShop(Player player, double price) {
 		ItemStack item = player.getInventory().getItemInMainHand();
+		//creates the signshop, with the item in player hand
 		new SignShop(player, item.getType(), item.getAmount(), price);
 	}
 
